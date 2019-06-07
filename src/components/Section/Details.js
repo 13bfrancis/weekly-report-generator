@@ -1,4 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Input = styled.input`
+  margin: 0.5rem 0;
+`;
 
 const Details = ({
   index,
@@ -11,7 +16,7 @@ const Details = ({
 }) => {
   return (
     <>
-      <input
+      <Input
         type="text"
         value={statusValue}
         onChange={e => {
@@ -19,7 +24,7 @@ const Details = ({
         }}
         placeholder="Status"
       />
-      <input
+      <Input
         type="text"
         value={forecastValue}
         onChange={e => {
@@ -27,7 +32,7 @@ const Details = ({
         }}
         placeholder="Forecast"
       />
-      <input
+      <Input
         type="text"
         value={progressValue}
         onChange={e => {
