@@ -7,6 +7,7 @@ const ProjectBox = styled.div`
   justify-content: center;
 `;
 const DelButton = styled.button`
+  cursor: pointer;
   border: none;
 `;
 const ProjectField = styled.input`
@@ -30,7 +31,7 @@ const ProjectInput = ({ label, index, value, changeItem, deleteProject }) => (
         deleteProject(index);
       }}
     >
-      X
+      <i className="fas fa-trash" />
     </DelButton>
   </ProjectBox>
 );
